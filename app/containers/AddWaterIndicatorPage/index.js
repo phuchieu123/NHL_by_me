@@ -23,7 +23,7 @@ import { createStructuredSelector } from 'reselect';
 import { useInjectReducer } from 'utils/injectReducer';
 import { useInjectSaga } from 'utils/injectSaga';
 
-import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
+import { TouchableWithoutFeedback } from 'react-native';
 import CustomMultiSelect from '../../components/CustomMultiSelect';
 import BackHeader from '../../components/Header/BackHeader';
 import LoadingButton from '../../components/LoadingButton';

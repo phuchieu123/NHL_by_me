@@ -2,7 +2,7 @@ export const CONFIG = 'default'
 // export const CONFIG = 'maw'
 // export const CONFIG = 'staging'
 
-const BASE = 'https://g.lifetek.vn'
+const BASE = 'https://administrator.lifetek.vn.vn'
 const BASE_ADMIN = `https://administrator.lifetek.vn`
 // const BASE_ADMIN = `https://admin.lifetek.vn`
 
@@ -10,8 +10,8 @@ export const ADMIN_URL = `${BASE_ADMIN}:201/oauth/infor`;
 
 export const FACE_URL = `${BASE}:8082`
 export const DETECTION_URL = `${BASE}:298`
-export const API_ROLE_URL = 'https://g.lifetek.vn:201'
-export const API_RECORD_URL = 'https://g.lifetek.vn:227'
+export const API_ROLE_URL = 'https://administrator.lifetek.vn.vn:201'
+export const API_RECORD_URL = 'https://administrator.lifetek.vn.vn:227'
 
 export const DRIVER_ID = `03_Driver`
 export const APPROVE_ID = `10_ApproveSystem`
@@ -65,6 +65,17 @@ export const LIST_CONFIG = {
     DYNAMIC_FORM: `${BASE}:219`,
     UPLOAD: `${BASE}:203`,
     // NOTIFY: `${BASE}:234`,
+    useLocal: true,
+  },
+  internal: {
+    HOSTNAME: 'internal.lifetek.vn',
+    CLIENT_ID: '2090App',
+    OAUTH_URL: `${BASE}:201`,
+    _APP_URL: `${BASE}:290`,
+    APPROVE: `${BASE}:202`,
+    DYNAMIC_FORM: `${BASE}:209`,
+    UPLOAD: `${BASE}:203`,
+    NOTIFY: `${BASE}:208`,
     useLocal: true,
   },
 

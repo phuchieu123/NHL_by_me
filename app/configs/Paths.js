@@ -4,6 +4,7 @@ import { authenRequest } from '../utils/request';
 import { clearData, getData, storeData } from '../utils/storage';
 import { get } from 'lodash';
 import _ from 'lodash';
+// import { XMLHttpRequest } from 'react-native';
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 export const getConfig = async (hostname) => {
@@ -25,10 +26,35 @@ export const getConfig = async (hostname) => {
   if (hostname)
     if (!useLocal) {
       try {
+       
         let host = _.get(LIST_CONFIG, `${config}.HOSTNAME`, hostname);
         host = host.split('/').pop();
+        
         const hostUrl = `${ADMIN_URL}/${host}`;
+        
         console.log('hostUrl', hostUrl);
+
+        // const xhr = new XMLHttpRequest();
+        // xhr.withCredentials = false;
+
+        // xhr.onload = function() {
+        //   if (xhr.status === 200) {
+        //     console.log('API response:', xhr.responseText);
+        //     // Xử lý phản hồi thành công ở đây nếu cần
+        //   } else {
+        //     console.error('Error:', xhr.statusText);
+        //     // Xử lý lỗi khi trả về mã lỗi khác 200 ở đây nếu cần
+        //   }
+        // };
+  
+        // xhr.onerror = function() {
+        //   console.error('Request failed');
+        //   // Xử lý lỗi khi có lỗi trong quá trình gửi yêu cầu
+        // };
+  
+        // xhr.open('GET', hostUrl, true);
+        // xhr.send();
+        
         hostResponse = await authenRequest(hostUrl, {
           method: REQUEST_METHOD.GET,
         });
