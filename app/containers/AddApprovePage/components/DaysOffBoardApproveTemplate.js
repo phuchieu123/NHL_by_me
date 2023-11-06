@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
-import { useInjectSaga } from 'utils/injectSaga';
-import { useInjectReducer } from 'utils/injectReducer';
-import BackHeader from 'components/Header/BackHeader';
-import SingleAPISearch from 'components/CustomMultiSelect/SingleAPISearch';
-import { API_APPROVE_GROUP, API_DYNAMIC_FORM, API_FIELD } from 'configs/Paths';
+import { useInjectSaga } from '../../../utils/injectSaga';
+import { useInjectReducer } from '../../../utils/injectReducer';
+import BackHeader from '../../../components/Header/BackHeader';
+import SingleAPISearch from '../../../components/CustomMultiSelect/SingleAPISearch';
+import { API_APPROVE_GROUP, API_DYNAMIC_FORM, API_FIELD } from '../../../configs/Paths';
 import makeSelectAddApproveProject from '../selectors';
 import reducer from '../reducer';
 import saga from '../saga';

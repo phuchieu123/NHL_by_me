@@ -1,5 +1,5 @@
-import SingleAPISearch from 'components/CustomMultiSelect/SingleAPISearch';
-import { API_USERS } from 'configs/Paths';
+import SingleAPISearch from '../../components/CustomMultiSelect/SingleAPISearch';
+import { API_USERS } from '../../configs/Paths';
 import moment from 'moment';
 import { Body, Button, Icon, List, ListItem, Text, View } from 'native-base';
 import React, { useEffect, useState } from 'react';

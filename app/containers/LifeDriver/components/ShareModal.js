@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 import Modal from 'react-native-modal';
-import APISearch from 'components/CustomMultiSelect/MultiAPISearch';
-import { API_USERS } from 'configs/Paths';
+import APISearch from '../../../components/CustomMultiSelect/MultiAPISearch';
+import { API_USERS } from '../../../configs/Paths';
 import _ from 'lodash'
 import ToastCustom from '../../../components/ToastCustom';
 

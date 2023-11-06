@@ -12,23 +12,23 @@ import {
   Input,
   Label,
 } from 'native-base';
-import { taskStatusData, priorityData, MODULE } from 'utils/constants';
-import { checkedRequireForm, convertLabel } from 'utils/common';
-import { API_CUSTOMER, API_USERS } from 'configs/Paths';
-import CustomMultiSelect from 'components/CustomMultiSelect';
-import MultiAPISearch from 'components/CustomMultiSelect/MultiAPISearch';
-import SingleAPISearch from 'components/CustomMultiSelect/SingleAPISearch';
+import { taskStatusData, priorityData, MODULE } from '../../../utils/constants';
+import { checkedRequireForm, convertLabel } from '../../../utils/common';
+import { API_CUSTOMER, API_USERS } from '../../../configs/Paths';
+import CustomMultiSelect from '../../../components/CustomMultiSelect';
+import MultiAPISearch from '../../../components/CustomMultiSelect/MultiAPISearch';
+import SingleAPISearch from '../../../components/CustomMultiSelect/SingleAPISearch';
 import moment from 'moment';
-import LoadingLayout from 'components/LoadingLayout';
-import LoadingButton from 'components/LoadingButton';
+import LoadingLayout from '../../../components/LoadingLayout';
+import LoadingButton from '../../../components/LoadingButton';
 import CommentView from '../../CommentView';
-import ToastCustom from 'components/ToastCustom';
+import ToastCustom from '../../../components/ToastCustom';
 import _, { join } from 'lodash';
-import ImageInput from 'components/CustomInput/ImageInput';
-import CustomDateTimePicker from 'components/CustomDateTimePicker/DateTimePicker';
+import ImageInput from '../../../components/CustomInput/ImageInput';
+import CustomDateTimePicker from '../../../components/CustomDateTimePicker/DateTimePicker';
 import { makeSelectUserRole, makeSelectViewConfig } from '../../App/selectors';
 
-import CollapseView from 'components/CustomView/CollapseView';
+import CollapseView from '../../../components/CustomView/CollapseView';
 import { API_APPROVE_GROUP, CLIENT_ID } from '../../../configs/Paths';
 import { update } from '../../../api/tasks';
 import RenderHTML from "react-native-render-html";

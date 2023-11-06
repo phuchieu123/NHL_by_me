@@ -4,7 +4,7 @@ import { CalendarList } from 'react-native-calendars';
 // import Modal from 'react-native-modal';
 import moment from 'moment';
 import { Dimensions, Modal, Platform } from 'react-native';
-import theme from 'utils/customTheme';
+import theme from '../../utils/customTheme';
 // import ToastCustom from '../ToastCustom';
 import { FixToast, ToastCustom } from '../ToastCustom/FixToast';
 

@@ -4,8 +4,8 @@ import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 import reducer from './reducer';
 import saga from './saga';
-import { useInjectSaga } from 'utils/injectSaga';
-import { useInjectReducer } from 'utils/injectReducer';
+import { useInjectSaga } from '../../utils/injectSaga';
+import { useInjectReducer } from '../../utils/injectReducer';
 import makeSelectApprovePage from './selectors';
 import {
     Text,

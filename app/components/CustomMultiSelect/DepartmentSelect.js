@@ -13,7 +13,7 @@ import _ from 'lodash';
 import styles from './styles';
 import Modal from 'react-native-modal';
 import NoItem from './components/NoItem';
-import theme from 'utils/customTheme';
+import theme from '../../utils/customTheme';
 import RadioCustom from './components/Radio';
 import DefaultTitle from './components/DefaultTitle';
 

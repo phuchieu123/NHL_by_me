@@ -2,7 +2,7 @@ import { ActionSheet } from 'native-base';
 import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import DocumentPicker from 'react-native-document-picker'
 import RNFetchBlob from "rn-fetch-blob";
-import { requestCamera } from 'utils/permission';
+import { requestCamera } from '../utils/permission';
 import RNFS from 'react-native-fs';
 import { requestWriteExternalStorage } from "../utils/permission";
 

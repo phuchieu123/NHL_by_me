@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Header, Icon, Title, Body, Right, View, Text } from 'native-base';
-import { useInjectSaga } from 'utils/injectSaga';
-import { useInjectReducer } from 'utils/injectReducer';
+import { useInjectSaga } from '../../../utils/injectSaga';
+import { useInjectReducer } from '../../../utils/injectReducer';
 import * as RootNavigation from '../../../RootNavigation';
 import { makeSelectProfile } from '../../App/selectors';
 import reducer from '../reducer';

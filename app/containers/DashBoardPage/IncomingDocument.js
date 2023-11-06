@@ -3,7 +3,7 @@ import React, { useState, useEffect, Fragment } from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { INCOMING_DOCUMENT } from '../../configs/Paths';
 import { handleSearch, serialize } from '../../utils/common';
-import LoadingLayout from 'components/LoadingLayout';
+import LoadingLayout from '../../components/LoadingLayout';
 import moment from 'moment';
 import _ from 'lodash';
 import * as RootNavigation from '../../RootNavigation';

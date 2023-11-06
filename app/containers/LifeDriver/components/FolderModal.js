@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { Badge, Body, Button, Container, Icon, Input, Item, Label, Left, List, ListItem, Right, Tab, TabHeading, Tabs, Text, View, ActionSheet } from 'native-base';
 import Modal from 'react-native-modal';
 import { rename, addFolder } from '../../../api/fileSystem';
-import ToastCustom from 'components/ToastCustom';
+import ToastCustom from '../../../components/ToastCustom';
 import _ from 'lodash'
 
 const FolderModal = props => {

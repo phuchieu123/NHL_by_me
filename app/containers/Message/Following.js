@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import ListPage from '../../components/ListPage';
 import { API_USERS } from '../../configs/Paths';
-import { getAvatar, getFilterOr } from 'utils/common';
+import { getAvatar, getFilterOr } from '../../utils/common';
 import { Alert, DeviceEventEmitter, ToastAndroid, TouchableNativeFeedback } from 'react-native'
 import { makeSelectProfile, makeSelectSocket } from '../App/selectors';
 import { navigate } from '../../RootNavigation';

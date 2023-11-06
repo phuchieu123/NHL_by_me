@@ -16,7 +16,7 @@ import DateTimePicker from '../../../components/CustomDateTimePicker/DateTimePic
 import LoadingLayout from '../../../components/LoadingLayout';
 import { MODULE } from '../../../utils/constants';
 import { makeSelectUserRole, makeSelectViewConfig, makeSelectProfile } from '../../../containers/App/selectors'
-import { validateForm } from 'utils/validate';
+import { validateForm } from '../../../utils/validate';
 import { add, update } from '../../../api/metting';
 import { goBack, navigate } from '../../../RootNavigation';
 import { DATE_FORMAT } from '../../../utils/constants';

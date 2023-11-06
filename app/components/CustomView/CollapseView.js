@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
 import { Icon, Item, Text } from 'native-base';
-import theme from 'utils/customTheme'
+import theme from '../../utils/customTheme'
 
 const CollapseView = props => {
     const { hide, title } = props

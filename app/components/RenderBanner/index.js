@@ -11,7 +11,7 @@ import { Image, Linking, TouchableOpacity } from 'react-native';
 import { navigate } from '../../RootNavigation';
 import { getData } from '../../utils/storage';
 import images from '../../images';
-import theme from 'utils/customTheme'
+import theme from '../../utils/customTheme'
 import { getAds } from '../../api/ads';
 
 const ADS = [

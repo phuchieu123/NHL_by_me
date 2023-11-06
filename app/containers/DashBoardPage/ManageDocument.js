@@ -3,7 +3,7 @@ import { BackHandler, DeviceEventEmitter, Text, View } from 'react-native';
 import { Button, ListItem, List, Right, Body } from 'native-base';
 import { INCOMING_DOCUMENT, API_INCOMMING_DOCUMENT } from '../../configs/Paths';
 import { handleSearch, serialize } from '../../utils/common';
-import LoadingLayout from 'components/LoadingLayout';
+import LoadingLayout from '../../components/LoadingLayout';
 import moment from 'moment';
 import _ from 'lodash';
 import * as RootNavigation from '../../RootNavigation';

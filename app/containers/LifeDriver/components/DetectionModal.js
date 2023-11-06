@@ -1,12 +1,12 @@
-import Search from 'components/CustomMultiSelect/Search';
-import { FixToast, ToastCustom } from 'components/ToastCustom/FixToast';
+import Search from '../../../components/CustomMultiSelect/Search';
+import { FixToast, ToastCustom } from '../../../components/ToastCustom/FixToast';
 import { Body, Button, Icon, List, ListItem, Text, View } from 'native-base';
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-native-modal';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
-import { uriToBase64 } from 'utils/fileSystem';
+import { uriToBase64 } from '../../../utils/fileSystem';
 import { detection } from '../../../api/detection';
 import ImageInput from '../../../components/CustomInput/ImageInput';
 import CustomeList from '../../../components/ListPage/List';

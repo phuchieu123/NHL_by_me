@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import {View, Text, TextInput} from 'react-native';
 import { Icon, Button} from 'native-base';
 import { Keyboard, Platform } from 'react-native';
-import theme from 'utils/customTheme'
+import theme from '../../utils/customTheme'
 
 const SearchBox = (props) => {
     const { onChange } = props;

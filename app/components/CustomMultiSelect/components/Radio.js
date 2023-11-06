@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { View, Radio } from 'native-base';
 import _ from 'lodash';
-import theme from 'utils/customTheme';
+import theme from '../../../utils/customTheme';
 import { TouchableOpacity } from 'react-native';
 
 const RadioCustom = (props) => {

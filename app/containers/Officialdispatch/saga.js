@@ -5,7 +5,7 @@ import request, { fileRequest } from '../../utils/request';
 import { UPLOAD_URL, INCOMING_DOCUMENT, UPLOAD_FILE, API_DOCUMENTARY } from '../../configs/Paths';
 import { REQUEST_METHOD } from '../../utils/constants';
 import { serialize } from '../../utils/common';
-import ToastCustom from 'components/ToastCustom';
+import ToastCustom from '../../components/ToastCustom';
 import moment from 'moment';
 import { uploadImage } from '../../api/fileSystem';
 

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Icon, Input, Item } from 'native-base';
-import { getFilterOr } from 'utils/common';
+import { getFilterOr } from '../../../utils/common';
 
 export default SearchBox = props => {
     const { handleReload, query, setQuery } = props

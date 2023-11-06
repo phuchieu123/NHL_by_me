@@ -4,7 +4,7 @@ import { Button, Card, ListItem, List, Left, Right, } from 'native-base';
 import { INCOMING_DOCUMENT, MEETING_SCHEDULE } from '../../configs/Paths';
 import { handleSearch, serialize } from '../../utils/common';
 import { taskKanbanData } from '../../utils/constants';
-import LoadingLayout from 'components/LoadingLayout';
+import LoadingLayout from '../../components/LoadingLayout';
 import moment from 'moment';
 import _ from 'lodash';
 import { getProfile } from '../../utils/authen';

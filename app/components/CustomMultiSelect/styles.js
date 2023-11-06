@@ -1,4 +1,4 @@
-import theme from 'utils/customTheme';
+import theme from '../../utils/customTheme';
 
 export default styles = {
   view: {
