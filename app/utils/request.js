@@ -6,10 +6,15 @@ import { onLogout } from '../utils/deviceEventEmitter';
 import ToastCustom from '../components/ToastCustom';
 
 export const fet = async (url, options) => {
-  return fetch(url, options)
-    .then(checkStatus)
-    .then(res => res.json());
-}
+
+  try {
+    return fetch(url, options)
+      .then(checkStatus)
+      .then(res => res.json()).catch(err => console.log(err,'vao day ne'));
+  } catch (err) {
+    console.log(111122, err);
+  }
+};
 
 export function checkStatus(response) {
   const status = _.get(response, 'respInfo.status') || _.get(response, 'status');
@@ -28,7 +33,8 @@ export function checkStatus(response) {
 }
 
 export function authenRequest(url, options) {
-  return fet(url, options)
+  console.log('66666 voo day ');
+  return fet(url, options);
 }
 
 export async function fileRequest(url, options) {
@@ -43,7 +49,7 @@ export async function fileRequest(url, options) {
     );
     options.headers = newHeaders;
 
-    return fet(url, options)
+    return fet(url, options);
   }
   return null;
 }
@@ -59,9 +65,11 @@ export default async function request(url, options, removeContentType = false) {
       options.headers,
     );
     options.headers = newHeaders;
-    if (removeContentType) { delete options.headers['Content-Type'] }
+    if (removeContentType) {
+      delete options.headers['Content-Type'];
+    }
 
-    return fet(url, options)
+    return fet(url, options);
   }
   return null;
 }

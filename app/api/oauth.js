@@ -8,7 +8,9 @@ import { APPROVE_ID, DRIVER_ID } from '../../urlConfig';
 
 export const login = async (data) => {
     try {
+        
         const hostResponse = await getData('urlConfig')
+        console.log(hostResponse, data ,'ddaya')
         const { appUrl, clientId, oauthUrl, domain, approveUrl, uploadUrl } = hostResponse;
         let body = {
             headers: {
@@ -18,13 +20,15 @@ export const login = async (data) => {
             body: qs.stringify(data),
         };
         let url = `${oauthUrl}/oauth/token`;
+        console.log('hel')
         const loginResponse = await authenRequest(url, body);
+        
         console.log(loginResponse, "loginRespose");
         if (typeof loginResponse.access_token === 'string') {
             await storeData('accessToken', loginResponse.access_token);
             return loginResponse.access_token
         }
-    } catch (error) { }
+    } catch (error) {console.log(error) }
 }
 
 export const getToken = async () => {

@@ -111,7 +111,9 @@ export function LoginPage(props) {
         console.log('config', config)
         if (config.appUrl) {
           const isLogin = await login(data)
+          console.log(111111111, isLogin)
           if (isLogin) {
+            console.log('day neay')
             const result = await Promise.all([
               getToken(),
               getApproveToken(),
