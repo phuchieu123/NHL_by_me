@@ -3,10 +3,10 @@ export const CONFIG = 'default'
 // export const CONFIG = 'staging'
 
 const BASE = 'https://administrator.lifetek.vn.vn'
-const BASE_ADMIN = `https://administrator.lifetek.vn`
+const BASE_ADMIN = `http://192.168.0.88`
 // const BASE_ADMIN = `https://admin.lifetek.vn`
 
-export const ADMIN_URL = `${BASE_ADMIN}:201/oauth/infor`;
+export const ADMIN_URL = `${BASE_ADMIN}:10201/oauth/infor`;
 
 export const FACE_URL = `${BASE}:8082`
 export const DETECTION_URL = `${BASE}:298`

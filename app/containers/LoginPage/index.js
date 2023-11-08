@@ -89,25 +89,25 @@ export function LoginPage(props) {
      
         
 
-        // const config = await getConfig(domain)
+        const config = await getConfig(domain)
         // thay config.appUrl bằng true
 
 
-        const config ={
-          domain: "internal.lifetek.vn",
-          clientId: "2090App",
-          appUrl: "https://administrator.lifetek.vn:290",
-          logo: "",
-          oauthUrl: "https://administrator.lifetek.vn:201",
-          uploadUrl: "https://administrator.lifetek.vn:203",
-          approveUrl: "https://administrator.lifetek.vn:202",
-          dynamicFormUrl: "https://administrator.lifetek.vn:209",
-          signInUrl: "https://g.lifetek.vn:220/ren/form/61c6db151395724d5f472a30",
-          config: {
-              urlDB: "mongodb://langht:12345678@192.168.0.123:27017/2090App",
-              imageAI: "http://192.168.0.11:8080"
-          }
-      }  // tu fake config
+      //   const config ={
+      //     domain: "internal.lifetek.vn",
+      //     clientId: "2090App",
+      //     appUrl: "https://administrator.lifetek.vn:290",
+      //     logo: "",
+      //     oauthUrl: "https://administrator.lifetek.vn:201",
+      //     uploadUrl: "https://administrator.lifetek.vn:203",
+      //     approveUrl: "https://administrator.lifetek.vn:202",
+      //     dynamicFormUrl: "https://administrator.lifetek.vn:209",
+      //     signInUrl: "https://g.lifetek.vn:220/ren/form/61c6db151395724d5f472a30",
+      //     config: {
+      //         urlDB: "mongodb://langht:12345678@192.168.0.123:27017/2090App",
+      //         imageAI: "http://192.168.0.11:8080"
+      //     }
+      // }  // tu fake config
         console.log('config', config)
         if (config.appUrl) {
           const isLogin = await login(data)
