@@ -134,7 +134,7 @@ export function DashBoardPage(props) {
           />
         }
       />
-      <View style={{backgroundColor: '#eee', }}>
+      <View style={{backgroundColor: '#eee' }}>
         <ScrollView>
           <View style={{ flex: 1, backgroundColor: '#99CC99', paddingBottom: 0 }}>
             <Image
@@ -242,8 +242,8 @@ export function DashBoardPage(props) {
             {!bosRole.GET ? null : <DashBoardBos navigation={navigation} kanbanBosConfigs={kanbanBosConfigs} query={query} />}
             {!taskRole.GET ? null : <DashBoardTask navigation={navigation} kanbanTaskConfigs={kanbanTaskConfigs} query={query} />}
             {!inComingDocumentRole.GET ? null : <IncomingDocument />}
-            {/* {!calendarRole.GET ? null : <MeetingSchedule />}
-            {!calendarRole.GET ? null : <WorkingSchedule profile={profile} />} */}
+            {!calendarRole.GET ? null : <MeetingSchedule />}
+            {/* {!calendarRole.GET ? null : <WorkingSchedule profile={profile} />} */}
           </View>
         </ScrollView>
       </View>

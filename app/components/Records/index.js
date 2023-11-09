@@ -86,7 +86,7 @@ const Records = (props) => {
                 <Icon name="close" type="AntDesign" />
             </Button>
         </View>
-    </View >
+    </View>
 }
 
 export default Records

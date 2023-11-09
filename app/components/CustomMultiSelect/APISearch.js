@@ -249,8 +249,8 @@ const APISearch = (props) => {
                 }
             </View>}
             <Footer onClose={onClose} handleSave={handleSave} readOnly={readOnly} />
-        </Modal >
-    </View >
+        </Modal>
+    </View>
 };
 
 export default APISearch;

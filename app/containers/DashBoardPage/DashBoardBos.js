@@ -69,9 +69,40 @@ export default DashBoardBos = (props) => {
   return (
     <>
       <View style={styles.view}>
-        <Button small rounded block style={{ width: '100%', marginVertical: 2 }} onPress={handleGetBos}>
+        {/* Do rounded của button */}
+        {/* <Button small rounded block style={{ width: '100%', marginVertical: 2 }} onPress={handleGetBos}>
           <Text style={{ textAlign: 'center' }}>Cơ hội kinh doanh</Text>
           <Icon type='Ionicons' name='reload' style={{ position: 'absolute', right: 0, color: '#fff' }} />
+        </Button> */}
+        <Button
+          small
+          rounded
+          block
+          style={{
+            width: '100%',
+            marginVertical: 2,
+            borderRadius: 20,
+            padding: 0,
+            margin: 0,
+            backgroundColor: 'rgba(46, 149, 46, 1)',
+          }}
+          onPress={handleGetBos}>
+          <Text
+            block
+            style={{
+              justifyContent: 'center',
+              alignItems: 'center',
+              color: 'white',
+              flex: 1,
+              width: '100vw',
+            }}>
+            Cơ hội kinh doanh
+          </Text>
+          <Icon
+            type="Ionicons"
+            name="reload"
+            style={{position: 'absolute', right: -120, color: '#fff'}}
+          />
         </Button>
       </View>
       <LoadingLayout isLoading={loading}>
