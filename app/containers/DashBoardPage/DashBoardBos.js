@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, Button } from 'native-base';
+import { View,Text, TouchableOpacity} from 'react-native'
+import {Button } from 'native-base';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { API_COUNT_SOURCE, API_REPORT_BOS } from '../../configs/Paths';
 import { handleSearch, serialize } from '../../utils/common';
@@ -74,26 +75,28 @@ export default DashBoardBos = (props) => {
           <Text style={{ textAlign: 'center' }}>Cơ hội kinh doanh</Text>
           <Icon type='Ionicons' name='reload' style={{ position: 'absolute', right: 0, color: '#fff' }} />
         </Button> */}
-        <Button
+        <TouchableOpacity
           small
-          rounded
+          
           block
           style={{
+            position:'relative',
             width: '100%',
             marginVertical: 2,
             borderRadius: 20,
             padding: 0,
             margin: 0,
             backgroundColor: 'rgba(46, 149, 46, 1)',
+            textAlign:'center'
           }}
           onPress={handleGetBos}>
           <Text
             block
             style={{
-              justifyContent: 'center',
-              alignItems: 'center',
+              textAlign:'center',
               color: 'white',
-              flex: 1,
+              marginBottom: 10,
+              marginTop: 10,
               width: '100vw',
             }}>
             Cơ hội kinh doanh
@@ -101,9 +104,9 @@ export default DashBoardBos = (props) => {
           <Icon
             type="Ionicons"
             name="reload"
-            style={{position: 'absolute', right: -120, color: '#fff'}}
+            style={{position: 'absolute', right: 10, top:12 , color: '#fff'}}
           />
-        </Button>
+        </TouchableOpacity>
       </View>
       <LoadingLayout isLoading={loading}>
         {Array.isArray(kanbanBosConfigs) && kanbanBosConfigs.length > 0 && (
@@ -178,7 +181,7 @@ const styles = {
     margin: 3,
     height: 102,
   },
-  textButton: { color: 'black', marginBottom: 10, marginTop: 15, fontSize: 24, fontWeight: 'bold' },
+  textButton: { color: 'black', marginBottom: 10, marginTop: 15, fontSize: 24, fontWeight: 'bold', textAlign:'center' },
   textNote: { color: 'black', marginBottom: 10, fontSize: 8, textAlign: 'center' },
 
   textNote_2: {

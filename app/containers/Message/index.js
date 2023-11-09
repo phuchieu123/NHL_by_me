@@ -49,5 +49,5 @@ export default Message = (props) => {
                 <Following />
             </Tab>
         </Tabs>
-    </Container >
+    </Container>
 }

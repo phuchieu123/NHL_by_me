@@ -28,8 +28,6 @@ import WorkingSchedule from './WorkingSchedule';
 import reducer from './reducer';
 import saga from './saga';
 import makeSelectDashBoardPage from './selectors';
-
-import MsgIcon from '../Message/components/MsgIcon';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Icon5 from 'react-native-vector-icons/FontAwesome5';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
@@ -148,13 +146,14 @@ export function DashBoardPage(props) {
                 alignSelf: 'center',
                 resizeMode: 'cover',
                 borderRadius: 75,
+                
               }}
             />
             <View style={{ justifyContent: 'center', alignItems: 'center', marginTop: 0, marginBottom: 40 }}>
-              <Text>{profile.name}</Text>
+              <Text style={{color: 'white', fontSize:18}} >{profile.name}</Text>
             </View>
             <View style={{ flexDirection: 'row', position: 'absolute', bottom: 10, right: 0 }}>
-              <MsgIcon iconStyle={{ paddingRight: 5, fontSize: 30, color:'white' }} />
+              <MaterialIcons name='chat' onPress={() => navigation.navigate('Message')} style={{ paddingRight: 10, fontSize: 30, color: '#fff' }} />
               <Icon onPress={() => navigation.navigate('SettingPage')} name='user-circle' type='FontAwesome' style={{ paddingRight: 10, fontSize: 30, color: '#fff' }} />
               <Ionicons onPress={() => navigation.navigate('FingerprintUser')} name='settings' type='Ionicons' style={{ paddingRight: 10, fontSize: 30, color: '#fff' }} />
             </View>
@@ -321,7 +320,7 @@ const styles = {
     // alignItems: 'flex-end',
     justifyContent: 'flex-end',
     alignSelf: 'stretch',
-    backgroundColor: '#eee',
+    backgroundColor: '#cccccc',
     marginTop: 10,
     // borderRadius: 15,
     borderTopLeftRadius: 15,

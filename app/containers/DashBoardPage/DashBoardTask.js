@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import {Text, View, Button} from 'native-base';
+import { View,Text, TouchableOpacity} from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons';
 import LoadingLayout from '../../components/LoadingLayout';
 import {navigate} from '../../RootNavigation';
-import {TouchableOpacity} from 'react-native';
 import {getCoutTask} from '../../api/tasks';
 
 function split(array, n) {
@@ -61,11 +60,11 @@ export default DashBoardTask = props => {
   return (
     <>
       <View style={styles.view}>
-        <Button
+        <TouchableOpacity
           small
-          rounded
           block
           style={{
+            position:'relative',
             width: '100%',
             marginVertical: 2,
             borderRadius: 20,
@@ -77,10 +76,10 @@ export default DashBoardTask = props => {
           <Text
             block
             style={{
-              justifyContent: 'center',
-              alignItems: 'center',
+              textAlign:'center',
               color: 'white',
-              flex: 1,
+              marginBottom: 10,
+              marginTop: 10,
               width: '100vw  ',
             }}>
             Công việc
@@ -88,9 +87,9 @@ export default DashBoardTask = props => {
           <Icon
             type="Ionicons"
             name="reload"
-            style={{position: 'absolute', right: -140, color: '#fff'}}
+            style={{position: 'absolute', right: 10, top:12 , color: '#fff'}}
           />
-        </Button>
+        </TouchableOpacity>
       </View>
       <LoadingLayout isLoading={loading}>
         {configs.map((config, index) => {

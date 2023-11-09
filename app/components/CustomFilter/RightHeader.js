@@ -23,7 +23,7 @@ export default RightHeader = props => {
                 <Icon
                     name="filter"
                     type="FontAwesome"
-                    style={{ color: '#fff', marginHorizontal: 10 }}
+                    style={{ color: '#fff', marginHorizontal: 10, fontSize: 30, }}
                     onPress={handleOpenFilterModal}
                 />
                 {/* <Text style={{ position: 'absolute', alignSelf: 'center', bottom: 0, right: 5, color: '#fff', fontSize: 9 }}>10</Text> */}
